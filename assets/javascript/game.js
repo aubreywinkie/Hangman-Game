@@ -44,12 +44,19 @@ document.onkeyup = function(e) {
 		else {
 			alert('good guess');
 			hits.push(userGuess);
-			console.log(hits);
+			randWordArray.forEach(function(ltr, idx) {
+				if(userGuess === ltr) {
+					dashesArray[idx] = ltr;
+					dashesHTML.innerHTML = dashesArray;
+				}
+
+			})
 		}
 
 	}
 }
 
+//if misses = 6 game over 
 // e abbreviation for event 
 // key is a method 
 
