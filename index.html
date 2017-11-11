@@ -4,16 +4,20 @@
 	<meta charset="UTF-8">
 	<title>Hangman Game</title>
 	<link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	
 </head>
 <body>
 	<div id="Title">
 	<h1> HANGMAN </h1>
 	</div>
-	<div id="word"></div>
+
 	<div id="press"> 
 		<p> Press Any Key To Begin </p>
 	</div>
+	<div id="word"></div>
+	<div id='hint'>
+
 	<div class="guessedLetters"> 
 		<p> Guessed Letters </p>
 		<div id="guessedLetters"></div>
@@ -22,24 +26,34 @@
 		<p> Number of Guesses Left </p>
 		<div id="guessesLeft">6</div>
 	</div>
-	<div class="bodyImg">
-		<div id="bodyImg1">
-			<img src="http://www.flashbynight.com/tutes/hangmanhtml5/man.png">
+	<div id='hint'>
+	<h3> Hint: ANIMAL </h3>
+	<img id= "animals" src="https://img3.stockfresh.com/files/d/dagadu/m/32/2333067_stock-photo-wild-animal-cartoon.jpg" height="200px", width="300px">
+	</div>
+	<div class="hangman">
+		<div class="bodyImg-1">
+			<img src="./assets/images/empty.png">
+			<div id="bodyImg-1"></div>
 		</div>
-		<div id="bodyImg2">
-			<img src="http://www.flashbynight.com/tutes/hangmanhtml5/man.png">
+		<div class="bodyImg-2">
+			<img src="./assets/images/head.png">
+			<div id="bodyImg-2"></div>
 		</div>
-		<div id="bodyImg3">
-			<img src="http://www.flashbynight.com/tutes/hangmanhtml5/man.png">
+		<div class="bodyImg-3">
+			<img src="./assets/images/topbody.png">
+			<div id="bodyImg-3"></div>
 		</div>
-		<div id="bodyImg4">
-			<img src="http://www.flashbynight.com/tutes/hangmanhtml5/man.png">
+		<div class="bodyImg-4">
+			<img src="./assets/images/armsandlegs.png">
+			<div id="bodyImg-"></div>
 		</div>
-		<div id="bodyImg5">
-			<img src="http://www.flashbynight.com/tutes/hangmanhtml5/man.png">
+		<div class="bodyImg-5">
+			<img src="./assets/images/bodyandpants.png">
+			<div id="bodyImg-5"></div>
 		</div>
-		<div id="bodyImg6">
-			<img src="http://www.flashbynight.com/tutes/hangmanhtml5/man.png">
+		<div class="bodyImg-6">
+			<img src="./assets/images/dead.png">
+			<div id="bodyImg-6"></div>
 		</div>
 	</div>
 

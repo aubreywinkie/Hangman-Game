@@ -1,5 +1,5 @@
 
-var wordBank = ["dog", "cat", "bird", "horse"]
+var wordBank = ["cow", "bird", "horse", "pig", "elephant", "eagle"]
 var randWord = wordBank [ Math.floor(Math.random() * wordBank.length) ];
 var userGuess;
 var misses = [];
@@ -52,9 +52,9 @@ document.onkeyup = function(e) {
 				if(userGuess === ltr) {
 					dashesArray[idx] = ltr;
 					dashesHTML.innerHTML = dashesArray;
-				}
-			checkWin();		
+				}	
 			})
+		checkWin();	
 		}
 
 	}
@@ -62,11 +62,14 @@ document.onkeyup = function(e) {
 
 
 function badGuess() {
-	for(let i = 0; i < misses.length; i++) {
+	for(var i = 0; i < misses.length; i++) {
 		var letter = document.getElementById('guessedLetters');
-		letter.innerHTML = misses[i];
-		console.log("misses" + misses[i]);
+		// var bodyIm = document.getElementById('.bodyImg-${i+1});
+		// bodyIm.style.opacity = "1";
+		// trying to get this to work but have been uncessful 
+		
 	}
+		letter.innerHTML = misses;
 		var number = document.getElementById('guessesLeft');
 		wrongGuess -=1;
 		number.innerHTML = wrongGuess;	

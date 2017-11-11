@@ -1,34 +1,65 @@
+*{
+	box-sizing: border-box;
+	
+}
+
 body{
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	color: #ebebeb;
-	background-color: black;
+	color: #0d35e4;
+	background-color: #777;
 	width: 960px;
 	margin: 0 auto 0 auto;
 	padding: 20px;	
+	text-align: center;
 }
 
+h1 {
+	font-size: 40px;
+}
+#press {
+	border-style: dotted;
+	border-width: 3px;
+	border-color: black;
+	font-size: 20px;
+	margin: 30px;
+
+}
+
+.guessedLetters{
+	font-size: 24px;
+	text-decoration: underline;
+}
+
+.guessesLeft{
+	font-size: 24px;
+	text-decoration: underline;
+}
+
+#word {
+	font-size: 24px;
+}
 .bodyImg {
-	width: 120px;
+	/*width: 120px;
 	height: 164px;
 	background: url(http://www.flashbynight.com/tutes/hangmanhtml5/man.png);
-	background-position: 0px 0px;
+	background-position: 0px 0px;*/
 }
 
-#bodyImg1 {
-	background-position: -120px, 0px;
+.bodyImg-1 {
+	opacity: 0;
 }
-#bodyImg2 {
-	background-position: -240px, 0px;
+.bodyImg-2 {
+	opacity: 0;
 }
-#bodyImg3 {
-	background-position: -3600px, 0px;
+.bodyImg-3 {
+	opacity: 0;
 }
-#bodyImg4 {
-	background-position: -4800px, 0px;
+.bodyImg-4 {
+	opacity: 0;
 }
-#bodyImg5 {
-	background-position: -600px, 0px;
+.bodyImg-5 {
+	opacity: 0;
 }
-#bodyImg6 {
-	background-position: -720px, 0px;
+.bodyImg-6 {
+	opacity: 0;
 }
